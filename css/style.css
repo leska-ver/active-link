@@ -1,0 +1,151 @@
+/*** // Общие ***/
+@font-face {
+  font-family: 'OpenSsans';
+  src: url('../fonts/OpenSsansRregular.woff2'), url('../fonts/OpenSsansRregular.woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-greenPea: #195557;
+  --color-portGore: #212353;
+  --color-blazeOrange: #ff6e00;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  /*Для .wrapper Это будет нужно для footer*/
+  height: 100%;
+}
+
+body {
+  min-width: 400px;
+  font-family: 'OpenSsans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  /*перенос слов*/
+  word-wrap: break-word;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Для семантики если нет заголовка h1 в вёрстке. Ставим скрытый заголовок. */
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 35px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+/*** // Общие ***/
+
+
+/***Шапка-header 1920px***/
+.header {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #EAEAEA;
+}
+
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__item {
+  padding: 0 20px;
+}
+
+.header__btn {
+  color: var(--color-black);
+}
+
+.header__btn:hover {
+  color: var(--color-blazeOrange);
+}
+
+/*не удалят! JS активная кнопка -Главная-*/
+.active-link {
+  color: var(--color-blazeOrange);
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-portGore);
+  box-shadow: 0px 5px 5px -5px var(--color-greenPea);
+  color: var(--color-portGore);
+}
+
+/* // не удалят! JS активная кнопка -Главная-*/
+/*** // Шапка-header 1920px***/
+
+
+
+
+
+/***Подвал-footer 1920px***/
+.footer {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #EAEAEA;
+}
+
+/*** // Подвал-footer 1920px***/
